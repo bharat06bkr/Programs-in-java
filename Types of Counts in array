@@ -1,10 +1,11 @@
 package Arrays;
 import java.util.Scanner;
+import java.util.HashSet;
 
 public class Count 
 {
     Scanner sc=new Scanner(System.in);
-    void meth()
+    void meth1()
     {
         int n=sc.nextInt();
         int arr[]=new int[n];
@@ -40,9 +41,24 @@ public class Count
         System.out.println("The number of Even elements "+e_count);
         System.out.println("The number of odd elements "+o_count);
     }
+    void meth3()
+    {
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        arr[i]=sc.nextInt();
+        HashSet<Integer> set=new HashSet<Integer>();
+        for(int i=0;i<n;i++)
+        {
+            set.add(arr[i]);
+        }
+        System.out.println("The number of distinct elements in array "+set.size());
+    }
     public static void main(String []args)
     {
         Count obj=new Count();
-        obj.meth();
+        obj.meth1();
+        obj.meth2();
+        obj.meth3();
     }    
 }
