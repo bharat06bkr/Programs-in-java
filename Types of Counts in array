@@ -7,6 +7,7 @@ public class Count
     Scanner sc=new Scanner(System.in);
     void meth1()
     {
+        /* NUMBER OF ELEMENTS IN AN ARRAY */
         int n=sc.nextInt();
         int arr[]=new int[n];
         for(int i=0;i<n;i++)
@@ -22,6 +23,7 @@ public class Count
     }
     void meth2()
     {
+        /* NUMBER OF EVEN AND ODD ELEMENTS IN AN ARRAY */
         int n=sc.nextInt();
         int arr[]=new int[n];
         for(int i=0;i<n;i++)
@@ -43,6 +45,7 @@ public class Count
     }
     void meth3()
     {
+        /* NUMBER OF DISTINCT ELEMENTS IN AN ARRAY */
         int n=sc.nextInt();
         int arr[]=new int[n];
         for(int i=0;i<n;i++)
