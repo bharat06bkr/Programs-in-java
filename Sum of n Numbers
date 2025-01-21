@@ -1,0 +1,23 @@
+package Recursion;
+import java.util.Scanner;
+
+public class Sum 
+{
+   static Scanner sc=new Scanner(System.in);
+    public static void sumNum(int i,int n,int sum)
+    {
+        if(n==i)
+        {
+            sum=sum+i;
+            System.out.println("Sum of n natural numbers by using RECURSION "+sum);
+            return;
+        }
+        sum=sum+i;
+        sumNum(i+1,n,sum);
+    }
+    public static void main(String []args)
+    {
+        int n=sc.nextInt();
+        sumNum(1,n,0);
+    }
+}
