@@ -3,6 +3,42 @@ import java.util.Scanner;
 
 public class Factorial 
 {
+
+    static int cal(int n)
+    {
+        if(n==1 || n==0)
+        {
+            return 1;
+        }
+        int f=cal(n-1);
+        int fact=f*n;
+        return fact;
+    }
+    static void calci(int i,int n,int fact)
+    {
+        if(n==i)
+        {
+            fact=fact*i;
+            System.out.println("The Factorial of given number by using RECURSION "+fact);
+            return;
+        }
+        fact=fact*i;
+        calci(i+1, n, fact);
+    }
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+       // calci(1, n, 1);
+       int answer=cal(n);
+       System.out.println("The Factorial of given number by using RECURSION "+answer);
+        sc.close();
+    }
+}
+
+
+public class Factorial 
+{
 //---------------------TYPE 1----------------------------
     static int cal(int n)
     {
