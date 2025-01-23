@@ -1,5 +1,11 @@
 package Recursion;
 import java.util.Scanner;
+/*
+EXPLANANTION:
+ Input array
+ Finshing the Largest elmemnt in array by not using normally with loop
+ By using Advanced technique known as Recursion
+ */
 
 public class Large 
 {
