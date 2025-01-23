@@ -1,0 +1,35 @@
+package Recursion;
+import java.util.Scanner;
+
+public class Large 
+{
+    public static void meth(int arr[],int i,int large)
+    {
+        if(i==0)
+        {
+            if(large<arr[i])
+            {
+                large=arr[i];
+            }
+            System.out.println("The Largest Element in array by using RECURSION "+large);
+            return;
+        }
+        if(large<arr[i])
+        {
+            large=arr[i];
+        }
+        meth(arr,i-1,large);
+    }
+    public static void main(String []args)
+    {
+       Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       int num[]=new int[n];
+       for(int i=0;i<n;i++)
+       {
+           num[i]=sc.nextInt(); 
+       }
+       meth(num,n-1,num[0]);
+       sc.close();
+    }    
+}
