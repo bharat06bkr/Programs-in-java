@@ -1,6 +1,11 @@
 package Recursion;
 import java.util.Scanner;
-
+/*
+EXPLANANTION:
+ Input array
+ Finshing the smallest elmemnt in array by not using normally with loop
+ By using Advanced technique known as Recursion
+ */
 public class Small 
 {
     static void meth(int arr[],int i,int small)
