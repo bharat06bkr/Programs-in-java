@@ -1,0 +1,36 @@
+package Recursion;
+import java.util.Scanner;
+
+public class Palindrome 
+{
+    Scanner sc=new Scanner(System.in);
+    static int num;
+    public static void meth(int n,int org)
+    {
+        if(n<1)
+        {
+            if(num==org)
+            {
+                System.out.println("The given number is Palindrome");
+            }
+            else
+            {
+                System.out.println("The given number is not a Palindrome");
+            }
+            return;
+        }
+        else
+        {
+        num=num*10+n%10;
+        meth(n/10,org);
+        }
+    }
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int org=n;
+        meth(n,org);
+        sc.close();
+    }
+}
