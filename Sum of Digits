@@ -1,5 +1,11 @@
 package Recursion;
 import java.util.Scanner;
+/*
+EXPLANATION:
+INPUT : 342
+We are adding the digits of given number
+*/
+
 
 public class Sumofd 
 {
