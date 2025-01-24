@@ -1,0 +1,25 @@
+package Recursion;
+import java.util.Scanner;
+
+public class Sumofd 
+{
+    static int num;
+    static Scanner sc=new Scanner(System.in);
+    static void meth(int n,int sum)
+    {
+        if(n<1)
+        {
+            System.out.println("Sum of digit in given Number by using RECURSION "+sum);
+            return;
+        }
+        num=n%10;
+        sum=sum+num;
+        meth(n/10,sum);
+    }
+    public static void main(String []args)
+    {
+        int digit=sc.nextInt();
+        meth(digit,0);
+        sc.close();
+    }    
+}
