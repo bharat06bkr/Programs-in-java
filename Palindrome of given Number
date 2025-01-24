@@ -1,5 +1,10 @@
 package Recursion;
 import java.util.Scanner;
+/*
+EXPLANATION:
+INPUT : 342
+We are checking given number is Palindrome is not BY USING RECURSION
+*/
 
 public class Palindrome 
 {
