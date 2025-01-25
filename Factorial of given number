@@ -1,5 +1,8 @@
 package Recursion;
 import java.util.Scanner;
+/* Exxplanation:
+   WE are trying to find the factorial of given number by using Recursion
+*/
 
 public class Factorial 
 {
