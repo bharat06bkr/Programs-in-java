@@ -1,0 +1,30 @@
+package Numbers;
+import java.util.Scanner;
+
+public class Automorpic 
+{
+    static Scanner sc=new Scanner(System.in);
+    void finder()
+    {
+        int n=sc.nextInt();
+        int dup=n;
+        int sqr=n*n;
+        while(n!=0)
+        {
+            if(n%10!=sqr%10)
+            {
+                System.out.println("The given number "+dup+" is not Automorpic");
+                return;
+            }
+            n=n/10;
+            sqr=sqr/10;
+        }
+        System.out.println("The given number "+dup+" is Automorpic");
+    }
+    public static void main(String []args)
+    {
+        Automorpic obj=new Automorpic();
+        obj.finder();
+        sc.close();
+    }
+}
