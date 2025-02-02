@@ -5,7 +5,7 @@ import java.util.Scanner;
 */
 public class Automorpic 
 {
-    public static void finder(int num,int power,int i,int dup)
+    pubLic static void finder(int num,int power,int i,int dup)
     {
         if(i>2)
         {
