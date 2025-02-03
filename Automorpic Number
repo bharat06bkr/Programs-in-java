@@ -3,7 +3,7 @@ import java.util.Scanner;
 /*
 
 */
-public class AutomorpiC
+public class Automorpic
 {
     pubLic static void finder(int num,int power,int i,int dup)
     {
