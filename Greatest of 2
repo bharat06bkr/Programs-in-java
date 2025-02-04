@@ -2,7 +2,7 @@ package Numbers;
 import java.util.Scanner;
 
 
-public class Gof2 
+public class Gof2
 {
     Scanner sc=new Scanner(System.in);
     void meth()
