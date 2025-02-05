@@ -1,8 +1,5 @@
 package Recursion;
 import java.util.Scanner;
-/*
-
-*/
 public class Automorpic
 {
     pubLic static void finder(int num,int power,int i,int dup)
