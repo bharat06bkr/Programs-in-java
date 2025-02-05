@@ -42,7 +42,7 @@ public class Factorial
 
 public class Factorial 
 {
-//---------------------TYPE 1----------------------------
+//---------------------TYPE 1-----------------------------
     static int cal(int n)
     {
         if(n==1 || n==0)
