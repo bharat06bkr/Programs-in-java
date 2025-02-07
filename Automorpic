@@ -1,7 +1,6 @@
 package Numbers;
 import java.util.Scanner;
 
-
 public class Automorpic 
 {
     static Scanner sc=new Scanner(System.in);
