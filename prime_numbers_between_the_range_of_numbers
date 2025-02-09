@@ -1,9 +1,14 @@
-public class prime_numbers_between_range
+import java.util.Scanner;
+public class Main
 {
     public static void main(String[] args)
     {
-        int lower=2;
-        int higher=10;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the lower number:");
+        int lower=scanner.nextInt();
+        System.out.println("Enter the higher number:");
+        int higher=scanner.nextInt();
+        System.out.println("prime numbers are:");
         for(int i=lower;i<=higher;i++)
         {
             if(isPrime(i))
