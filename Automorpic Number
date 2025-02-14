@@ -9,7 +9,7 @@ public class Automorpic
             while(num!=0)
             {
                 if(num%10!=power%10)
-                { 
+                {
                     System.out.println("The given number "+dup+" is not automorphic number");
                     return;
                 }
