@@ -1,6 +1,5 @@
 package Numbers;
 import java.util.Scanner;
-
 public class Gof3 
 {
     Scanner sc=new Scanner(System.in);
