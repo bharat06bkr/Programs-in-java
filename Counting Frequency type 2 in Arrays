@@ -1,1 +1,37 @@
 
+package Arrays;
+import java.util.*;
+
+public class Frequency 
+{
+    static Scanner sc=new Scanner(System.in);
+    void freq(int arr[],int n)
+    {
+        HashMap<Integer,Integer> hm=new HashMap<Integer,Integer>();
+        for(int i=0;i<arr.length;i++)
+        {
+            if(hm.containsKey(arr[i]))
+            {
+                hm.put(arr[i],(hm.get(arr[i]))+1);
+            }
+            else
+            {
+                hm.put(arr[i],1);
+            }
+        }
+        HashSet<Object> hs=new HashSet<>(hm.entrySet());
+        Iterator<Object> i=hs.iterator();
+        while(i.hasNext())
+        System.out.println(i.next());
+    }
+    public static void main(String []args)
+    {
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        new Frequency().freq(arr, n);
+    }    
+}
