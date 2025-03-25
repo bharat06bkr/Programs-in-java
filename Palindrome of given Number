@@ -6,7 +6,7 @@ INPUT : 342
 We are checking given number is Palindrome is not BY USING RECURSION
 */
 
-public class Palindrome 
+public class Palindrome
 {
     Scanner sc=new Scanner(System.in);
     static int num;
