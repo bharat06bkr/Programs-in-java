@@ -1,6 +1,5 @@
 package Arrays;
 import java.util.*;
-
 public class Frequency1 
 {
     static Scanner sc=new Scanner(System.in);
